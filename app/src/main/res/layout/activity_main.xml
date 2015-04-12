@@ -12,14 +12,13 @@
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+        android:layout_height="wrap_content">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Source"
             android:id="@+id/button3"
-            android:layout_gravity="bottom"
             android:layout_weight="1"
             android:onClick="intent" />
 
@@ -28,7 +27,6 @@
             android:layout_height="wrap_content"
             android:text="Start"
             android:id="@+id/button"
-            android:layout_gravity="bottom"
             android:layout_weight="1"
             android:onClick="Start" />
 
@@ -37,9 +35,60 @@
             android:layout_height="wrap_content"
             android:text="Stop"
             android:id="@+id/button2"
-            android:layout_gravity="bottom"
             android:layout_weight="1"
             android:onClick="Stop" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/droid" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="透明"
+            android:id="@+id/button4"
+            android:layout_weight="1"
+            android:onClick="Alpha" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="回転"
+            android:id="@+id/button5"
+            android:layout_weight="1"
+            android:onClick="Rotate" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="拡大"
+            android:id="@+id/button6"
+            android:layout_weight="1"
+            android:onClick="ScaleUp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="縮小"
+            android:id="@+id/button8"
+            android:layout_weight="1"
+            android:onClick="ScaleDown" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="移動"
+            android:id="@+id/button7"
+            android:layout_weight="1"
+            android:onClick="Translate" />
     </LinearLayout>
 
 </LinearLayout>
